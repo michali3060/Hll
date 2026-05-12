@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hell Let Loose</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Butcherman&family=Changa+One:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Creepster&family=Nosifer&family=Nothing+You+Could+Do&family=Poiret+One&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+<body>
+    <div id="container">
+
+          <div id="header">
+                <div class="brand"><img src="img/img3.webp" id="img3"></div>
+                <div class="logo"><img src="img/img2.avif" id="img2"><span class="red">Hell</span> <span class="lightred">Let</span> Loose
+                </div>
+                <div class="brand"><img src="img/img4.png" id="img4"></div>
+          </div>    
+          <div id="navigation">
+               <a href="index.html" class="tilelink"><div class="tile1">Home <i class="bi bi-house"></i></div></a>
+               <a href="about.html" class="tilelink"><div class="tile1">About <i class="bi bi-book"></i></div></a>
+               <a href="roles.html" class="tilelink"><div class="tile1">Roles <i class="bi bi-card-list"></i></div></a>
+               <a href="howtoplay.html" class="tilelink"><div class="tile1">How to play <i class="bi bi-controller"></i></div></a>
+          </div>
+        <div id="page">
+     <div class="content" id="card1"><button id="expand" onclick="toggleCard()">Expand <i class="bi bi-arrows-expand-vertical"></i></button><iframe src="https://www.hellletloose.com/blog" class="news"></iframe></div>
+          <div class="main">
+               <p class="rolename">Commander<i class="bi bi-compass-fill"></i></p><p class="roledescription">Focuses on the overall battle by coordinating squads, deploying support abilities, and keeping the team supplied with vehicles and spawn points.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Controling entire team</li><li>Communicating with officers and giving them orders</li><li>Managing resources</li><li>Dropping air support, supply drops, and bombing runs</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Riffle or SMG, Pistol,  Smoke grenades, Shovel,</span><span class="yellow"> Watch, Binoculars,</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Officer<i class="bi bi-compass"></i></p><p class="roledescription">Keeps the squad organized, chooses where the squad attacks or defends, and creates safe respawn locations for teammates.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Building Outposts</li><li>Building Garrisons</li><li>Leading the squad</li><li>Communicating with other squads and Commander</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Riffle or SMG, Pistol(loadout ability) , Frag grenades, Smoke grenades, Shovel or Knife,</span><span class="yellow"> Watch, Binoculars</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Rifleman<i class="bi bi-crosshair2"></i></p><p class="roledescription">Reliable all-purpose infantry role that fights on the frontline and keeps teammates supplied with ammunition.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in all situations</li><li>Supplying ammunition</li><li>Helping engineers with building structures</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Bolt-action or semi-auto rifle, Frag grenades, Smoke grenades, Knife</span><span class="yellow"> Hammer, Ammo box(loadout ability)</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Assault<i class="bi bi-lightning"></i></p><p class="roledescription">Specializes in aggressive close-range combat and pushing enemy-held positions.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in close combat</li><li>Clearing buildings and trenches</li><li>Helping engineers with building structures</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">SMG, Frag grenades, Smoke grenades, Satchel charge(loadout ability), Knife(loadout ability),</span><span class="yellow"> Hammer  </span><span class="green"> Bandages </span></p>
+               <p class="rolename">Automatic Rifleman<i class="bi bi-shield"></i></p><p class="roledescription">Uses automatic weapons to pressure enemies and support advancing teammates with sustained fire.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Providing suppressive fire</li><li>Holding points</li><li>Helping engineers with building structures</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Automatic rifle or SMG, Frag grenades or Smoke grenades, Knife or Shovel</span><span class="yellow"> Hammer</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Machine Gunner<i class="bi bi-lightning-fill"></i></p><p class="roledescription">Locks down open areas with heavy suppressive fire and prevents enemy movement.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Providing suppressive fire</li><li>Holding points</li><li>Destroying enemy light vehicles</li><li>Defending</li><li>Helping engineers with building structures</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Heavy machine gun, Pistol (loadout ability), Knife or Shovel,</span><span class="yellow"> Hammer,</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Medic<i class="bi bi-heart-pulse"></i></p><p class="roledescription">Keeps soldiers in the fight by reviving wounded teammates and reducing squad casualties.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in all situations</li><li>Reviving fallen teammates</li><li>Setting up smoke cover</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Rifle  SMG  or Pistol, Smoke grenades, Knife or Shovel</span><span class="green"> Bandages (many), Medical kits</span></p>
+               <p class="rolename">Support<i class="bi bi-box-seam"></i></p><p class="roledescription">Provides the supplies needed for building important structures and maintaining the squads effectiveness.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in all situations</li><li>Supplying resources and ammunition</li><li>Helping engineers with building structures</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Rifle or SMG, Flamethrower (loadout ability), Frag grenades, Shovel,</span><span class="yellow"> Ammo box(loadout ability), Resources box, Hammer,</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Engineer<i class="bi bi-tools"></i></p><p class="roledescription">Strengthens defenses, deploys mines, and helps the team by constructing resource-generating structures.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in all situations</li><li>Placing and building Nodes</li><li>Placing and building Fortifications</li><li>Placing anti-personnel and anti-tank mines</li><li>Repairing vehicles</li><li>Destroying enemy armoured and light vehicles</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Rifle or SMG, Satchel charge (loadout ability), Anti-personnel mines and Anti-tank mines, Knife or Shovel,</span><span class="yellow"> Wrench, Hammer, Torch,</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Anti-Tank<i class="bi bi-fire"></i></p><p class="roledescription">Tracks and destroys enemy armor before it can threaten infantry or friendly vehicles.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in all situations</li><li>Destroying enemy armoured and light vehicles</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Rifle or SMG, AT launcher or anti-tank rifle, Anti-tank mines, Frag grenades, Knife</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Sniper<i class="bi bi-crosshair"></i></p><p class="roledescription">Eliminates dangerous targets from long range and creates pressure on enemy positions.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in long range combat</li><li>Eliminating enemy artillery crews</li><li>Destroying enemy nodes</li><li>Providing reconnaissance</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Sniper rifle, Pistol (loadout ability), Anti-personnel mines (loadout ability), Frag grenades or Smoke grenades,  Shovel,</span><span class="yellow"> Hammer</span><span class="green"> Bandages </span></p>
+               <p class="rolename">Spotter<i class="bi bi-binoculars"></i></p><p class="roledescription">Guides the recon squad, scouts enemy activity, and disrupts enemy operations behind the frontline.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Fighting in all situations</li><li>Spotting enemy positions</li><li>Helping sniper locate targets</li><li>Building outpost</li><li>Building garrisons</li><li>Eliminating enemy artillery crews</li><li>Destroying enemy nodes</li><li>Providing reconnaissance</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">SMG or rifle, Frag grenades or Smoke grenades, Shovel or Knife</span><span class="yellow"> Binoculars, Watch, Flare gun,</span><span class="green"> Bandages</span></p>
+               <p class="rolename">Tank crew<i class="bi bi-speedometer2"></i></p><p class="roledescription">Operates tanks to break through enemy lines, support infantry, and control key areas of the map.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Operating the tank</li><li>Destroying enemy armoured and light vehicles</li><li>Repairing vehicles</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Pistol or SMG, Torch, Frag grenades, Smoke grenades, Shovel,</span><span class="yellow"> Wrench, Hammer, Torch,</span><span class="green"> Bandages</span></p>
+               <p class="rolename">Artillery crew<i class="bi bi-geo-alt"></i></p><p class="roledescription">Operates long-range artillery guns to bombard enemy positions, destroy defenses, and support friendly attacks from far behind the frontline.</p>
+                    <p class="roleabout">Tasks</p><p class="roledescription"><ul class="roledescription"><li>Operating the artillery</li><li>Providing indirect fire support</li><li>Building nodes</li><li>Building reinforcements</li><li>Destroying enemy armoured and light vehicles</li></ul></p>
+                    <p class="roleabout">Equipment</p><p class="roledescription"><span class="red">Rifle or SMG, Frag grenades, Smoke grenades, Shovel</span><span class="yellow"> Wrench, Hammer, Torch,</span><span class="green"> Bandages</span></p>
+          </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="social">
+                <a href="download.html" class="downloadlink"><div class="download">Buy now</div></a>
+                <a href="https://www.hellletloose.com" class="sociallink" target="_blank"><div class="site" id="google"><i class="bi bi-google"></i></div></a>
+                <a href="https://discord.com/invite/hellletloose" class="sociallink" target="_blank"><div class="site" id="discord"><i class="bi bi-discord"></i></div></a>
+                <a href="https://www.twitch.tv/hellletlooseofficial" class="sociallink" target="_blank"><div class="site" id="twitch"><i class="bi bi-twitch"></i></div></a>
+                <a href="https://www.youtube.com/@HellLetLoose" class="sociallink" target="_blank"><div class="site" id="youtube"><i class="bi bi-youtube"></i></div></a>
+                <a href="https://x.com/hell_let_loose" class="sociallink" target="_blank"><div class="site" id="twitter"><i class="bi bi-twitter-x"></i></div></a>
+                <a href="https://www.reddit.com/r/HellLetLoose/" class="sociallink" target="_blank"><div class="site" id="reddit"><i class="bi bi-reddit"></i></div></a>
+                <a href="https://www.facebook.com/HellLetLoose/" class="sociallink" target="_blank"><div class="site" id="facebook"><i class="bi bi-facebook"></i></div></a>
+                <a href="https://www.instagram.com/hellletlooseofficial" class="sociallink" target="_blank"><div class="site" id="instagram"><i class="bi bi-instagram"></i></div></a>
+                <a href="https://www.tiktok.com/@playhellletloose" class="sociallink" target="_blank"><div class="site" id="tiktok"><i class="bi bi-tiktok"></i></div></a>
+                </div>      
+        </div>
+     </div>
+</body>
+</html>
